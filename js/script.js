@@ -9,3 +9,11 @@ let gameOver = document.querySelector("#gameOver");
 //declaring variable for score
 let interval = null;
 let playerScore = 0;
+
+// function for scores
+let scoreCounter = ()=>{
+    playerScore++;
+    score.innerHTML = `Score <b>${playerScore}</b>`;
+}
+
+ interval =setInterval(scoreCounter, 200);
